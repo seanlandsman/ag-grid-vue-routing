@@ -1,5 +1,5 @@
 <template>
-    <ag-grid-vue style="width: 500px; height: 500px;"
+    <ag-grid-vue style="width: 500px; height: 150px;"
                  class="ag-theme-balham"
                  :columnDefs="columnDefs"
                  :rowData="rowData"
@@ -12,11 +12,8 @@
     import {AgGridVue} from "ag-grid-vue";
     import PriceCellRenderer from "../components/PriceCellRenderer";
 
-    import '../../node_modules/ag-grid-community/dist/styles/ag-grid.css'
-    import '../../node_modules/ag-grid-community/dist/styles/ag-theme-balham.css'
-
     export default {
-        name: 'App',
+        name: 'PriceGrid',
         data() {
             return {
                 columnDefs: null,
@@ -57,3 +54,8 @@
         }
     }
 </script>
+
+<style lang="css">
+    @import '~ag-grid-community/dist/styles/ag-grid.css';
+    @import '~ag-grid-community/dist/styles/ag-theme-balham.css';
+</style>
