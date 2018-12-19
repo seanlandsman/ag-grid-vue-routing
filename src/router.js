@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Grid from './views/Grid.vue'
+import LinkGrid from './views/LinkGrid.vue'
 
 Vue.use(Router);
 
@@ -8,16 +8,16 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'grid',
-      component: Grid
+      name: 'linkGrid',
+      component: LinkGrid
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/price',
+      name: 'price',
       // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
+      // this generates a separate chunk (price.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: () => import(/* webpackChunkName: "price" */ './views/PriceGrid.vue')
     }
   ]
 })
