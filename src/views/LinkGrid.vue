@@ -4,7 +4,7 @@
                  :columnDefs="columnDefs"
                  :rowData="rowData"
                  :components="components"
-                 :firstDataRendered="this.onFirstDataRendered">
+                 @first-data-rendered="onFirstDataRendered">
     </ag-grid-vue>
 </template>
 
