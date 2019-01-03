@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/about">About</router-link>
+    <router-link to="/price">Price</router-link>
 </template>
 
 <script>
